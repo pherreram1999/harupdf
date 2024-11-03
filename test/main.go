@@ -12,9 +12,10 @@ func main() {
 	page := pdfdoc.NewPage()
 
 	page.AddText("Titulo sobre el documento", 24)
-	page.AddText("Me canso ganzo mendez mendoza", 14)
-	page.AddText("Ostia joder", 14)
-	page.AddText("Esto es otro parrafo demostrativo", 14)
+	for i := 0; i < 25; i++ {
+		page.AddText("Huevos", 16)
+		page.AddLine()
+	}
 
 	pdfdoc.SaveFile("demo.pdf")
 
